@@ -1,7 +1,7 @@
 import React, { Component, useEffect, useState } from 'react';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 import { FaGithub, FaLock, FaRocket } from 'react-icons/fa';
-// import FormBuilder from './components/FormBuilder';
+import FormBuilder from './components/FormBuilder';
 
 /**
  * Catches rendering errors anywhere below and shows them instead of a white screen.
@@ -324,7 +324,7 @@ function App() {
             </Col>
           </Row>
           <Row className="g-0">
-            {/* <FormBuilder githubToken={githubToken}/> */}
+            <FormBuilder githubToken={githubToken} />
           </Row>
         </Container>
         )
